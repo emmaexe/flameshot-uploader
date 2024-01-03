@@ -21,3 +21,17 @@ Config file (Create if it does not exist, located at ``~/.config/flameshot-uploa
 - server - the url where the post request should be sent (e.g. ``https://chibisafe.moe/api/upload``)
 - apikey - your chibisafe api key
 - command - The command you want to use. If you installed via flatpak, it should be ``flatpak run org.flameshot.Flameshot gui -r`` otherwise it should be ``flameshot gui -r``
+
+Building:
+
+```bash
+cmake -DCMAKE_BUILD_TYPE=Release -B build
+cmake --build build --target all
+```
+
+Creating a debian package:
+
+```bash
+cd build
+cpack
+```

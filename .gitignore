@@ -25,7 +25,7 @@
 *.out
 *.app
 
-# CMake
+# CMake and CPack
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -37,6 +37,9 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages
 
 build
 libs
